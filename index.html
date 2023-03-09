@@ -6,54 +6,90 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <!-- Needed for responsive design -->
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <!-- If you want custom browser colors on mobile -->
-        <meta name="theme-color" content="#1843c1" />
-        <meta name="apple-mobile-web-app-status-bar-style" content="#1843c1">
 
-        <title></title>
+        <title>NewsFlash</title>
 
-        <!-- Google Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet"> 
+        <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+
+         <!-- Remix icons -->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
         
         <!-- CSS File -->
         <link rel="stylesheet" href="dist/css/style.min.css">
+        <!-- Swiper -->
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
 
          <!-- JavaScript File -->
          <script defer src="dist/js/all.min.js"></script>
+         <!-- Swiper -->
+         <script defer src="assets/js/swiper-bundle.min.js"></script>
 
     </head>
     <body>
 
-        <main>
-            <section class="content">
-                <h1>Front-end Boilerplate</h1>
-                <h2>Using Sass and Gulp</h2>
+        <!-- Header -->
 
-                <p>
-                    Here's a quick set-up guide:
-                </p>
+        <header class="header" id="header">
 
-                <ul>
-                    <li>Clone Git repo</li>
-                    <li>Install by running "npm install" on the commmand line</li>
-                    <li>Run "gulp" on the command line to run default task without browser sync.</li>
-                    <li>Run "gulp sync" on the command line to run task with browser Sync</li>
-                </ul>
+            <nav class="container header__navbar navbar">
 
-            </section>
-            
-            <aside>
-                <h3>Project Info</h3>
-                <p>
-                    This is a starter front-end project which will compile SCSS and JS files using Gulp 4.
-                    I actually got this from the link below, then modified it to suit my needs! 
-                    You can checkout codercoder on youtube she has really good courses.
+                <a href="index.html">
+                    <h2 class="navbar__logo">NewsFlash</h2>
+                </a>
 
-                    <a href="https://github.com/thecodercoder/frontend-boilerplate" target="_blank">TheCoderCoder</a>
-                </p>
-            </aside>
-            
-        </main>
+
+                <div class="navbar__menu" id="menu">
+                    <ul class="navbar__menu_list">
+                        <li class="navbar__menu_item">
+                            <a href="#" class="navbar__menu_link navbar__menu_link--current">Home</a>
+                        </li>
+
+                        <li class="navbar__menu_item">
+                            <a href="#" class="navbar__menu_link ">Categories</a>
+                        </li>
+
+                        <li class="navbar__menu_item">
+                            <a href="#" class="navbar__menu_link ">Reviews</a>
+                        </li>
+
+                        <li class="navbar__menu_item">
+                            <a href="#" class="navbar__menu_link ">News</a>
+                        </li>
+
+                        <li class="navbar__menu_item">
+                            <a href="#" class="navbar__menu_link ">Membership</a>
+                        </li>
+
+                        <li class="navbar__menu_item">
+                            <a href="#" class="navbar__menu_link ">Contact</a>
+                        </li>
+
+                        <li class="navbar__menu_item navbar__menu_item--hidden">
+                            <a href="#" class="navbar__menu_link">Sign in</a>
+                        </li>
+
+                        <li class="navbar__menu_item navbar__menu_item--hidden">
+                            <a href="#" class="navbar__menu_link ">Sign up</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+
+                <div class="navbar__menu navbar__menu--right">
+                    <button class="navbar__menu-toggle" id="theme-toggle">
+                        <i class="ri-sun-line sun-icon"></i>
+                        <i class="ri-moon-line moon-icon"></i>
+                    </button>
+                </div>
+
+            </nav>
+
+
+        </header>
+
+
+
 
        
     </body>
